@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg{
+  background-image: url("./assets/bannerImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.bg1{
+  background-image: url("./assets/Mercedes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+}
+.bg2{
+  background-image: url("./assets/Ferrari.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+}
+.bg3{
+  background-image: url("./assets/productsList/productListBanner.png"); 
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .bg-cover-mobile {
+    background-position: 50% 0;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg1-cover-mobile {
+    background-position: 50% 0;
+    background-size: cover;
+  }
+}
+@media (max-width: 767px) {
+  .bg2-cover-mobile {
+    background-position: 50% 0;
+    background-size: cover;
+  }
+}
+@media (max-width: 767px) {
+  .bg3-cover-mobile {
+    background-position: 50% 10%;
+    background-size: cover;
+  }
+}
+
+
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit */
+}

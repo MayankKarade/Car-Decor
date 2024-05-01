@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <title>Car Decor</title>
+  </head>
+  <body class="bg-white w-full h-screen">
+    <!-- Header Section -->
+    <header
+      class="w-full h-20 bg-black flex items-center px-5 sm:px-20 md:px-14 absolute z-10"
+    >
+      <!-- Navbart Starts from here -->
+      <nav class="w-full flex justify-between items-center">
+        <!-- Car Decor Logo -->
+        <div class="flex items-center md:px-3">
+          <div class="logo flex justify-center items-center">
+            <img src="./assets/logo 1.png" alt="" class="w-[167px] h-14" />
+          </div>
+        </div>
+        <div
+          class="links-and-icons flex justify-between items-center space-x-7 md:space-x-14 lg:space-x-24"
+        >
+          <div class="links-items-section hidden md:block">
+            <ul class="flex justify-between items-center text-sm space-x-7">
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:text-red-700 duration-200 ease-in"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:text-red-700 duration-200 ease-in"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="prductListing.html"
+                  class="text-white hover:text-red-700 duration-200 ease-in"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:text-red-700 duration-200 ease-in"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white hover:text-red-700 duration-200 ease-in"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="searchbar-and-cart-profile-icons flex justify-around items-center space-x-7 md:space-x-9"
+          >
+            <div
+              class="search-section w-8 lg:w-[160px] flex justify-around items-center space-x-1 lg:px-3 rounded-2xl lg:bg-slate-700 lg:border-2 lg:border-stone-600"
+            >
+              <input
+                type="text"
+                placeholder="Search"
+                class="hidden lg:block text-white md:w-28 lg:w-[110px] h-7 focus:outline-none mb-1 text-sm px-1 bg-transparent"
+              />
+              <img
+                src="./assets/icons/searchIcon.png"
+                alt="search icon"
+                class="w-5 h-5"
+              />
+            </div>
+            <div
+              class="cart-profile-hamburger-icons flex justify-around items-center space-x-9 mr-5s"
+            >
+              <img
+                src="./assets/icons/cartIcon.png"
+                alt="cart icon"
+                class="w-5 h-5"
+              />
+              <img
+                src="./assets/icons/profileIcon.png"
+                alt="profile icon"
+                class="w-5 h-5 hidden md:block"
+              />
+              <img
+                src="./assets/icons/hamburgerIcon.png"
+                alt="hamburger icons"
+                class="w-4 h-4 md:hidden"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Navbar for medium screen -->
+        <aside
+          class="absolute right-0 top-2 bg-black w-[90%] sm:w-[74%] h-[50rem] md:hidden"
+        >
+          <div class="flex flex-col space-y-24">
+            <div
+              class="BackBtn-and-loginBtn text-white flex justify-around p-2 sm:px-8 mt-14 bg-gradient-to-l from-[#C90000] via-transparent to-transparent"
+            >
+              <div>
+                <button class="p-2">
+                  <img
+                    src="./assets/icons/BackIcon.png"
+                    alt=""
+                    class="w-5 h-5"
+                  />
+                </button>
+              </div>
+              <div>
+                <button class="text-2xl font-semibold text-[#C90000]">
+                  Login
+                </button>
+              </div>
+            </div>
+            <div class="navbar-links-mobile">
+              <ul class="flex flex-col items-start px-20 text-sm space-y-10">
+                <li>
+                  <a
+                    href="#"
+                    class="text-white hover:text-red-700 duration-200 ease-in"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white hover:text-red-700 duration-200 ease-in"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="prduct.html"
+                    class="text-white hover:text-red-700 duration-200 ease-in"
+                    >Product</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white hover:text-red-700 duration-200 ease-in"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white hover:text-red-700 duration-200 ease-in"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <!-- End of Navbor for medium screen -->
+      </nav>
+    </header>
+    <!-- End of Nav Bar  -->
+    <main>
+      <!-- Hero section start here -->
+      <section class="about-section w-full py-20 flex items-center">
+        <div
+          class="banner-container w-full h-[51rem] md:h-[780px] bg-white z-0"
+        >
+          <div
+            class="w-full bg bg-cover bg-cover-mobile h-[35rem] md:h-[48rem] lg:h-[58rem] lg:absolute lg:-top-48 overflow-y-visible z-0"
+          >
+            <div
+              class="flex flex-col lg:flex-row w-full h-auto md:mt-50 lg:mt-96 lg:space-x-0"
+            >
+              <div
+                class="heading-subheading-ShopNowBtn m-2 mt-16 md:mt-[8rem] lg:mt-16 flex flex-col md:ml-14 lg:ml-16 lg:min-w-[26rem] max-w-[42rem] space-y-6"
+              >
+                <div class="heading p-1 flex flex-col space-y-5">
+                  <h1
+                    class="text-white text-[2.5rem] leading-10 sm:text-5xl font-bold"
+                  >
+                    Unleash Your <br />Ride's Potential
+                  </h1>
+                  <p class="text-md text-white">
+                    Discover Precision and Performance with Our Alloy Wheels
+                  </p>
+                </div>
+                <div class="shopNow-btn">
+                  <button
+                    class="bg-white w-36 h-12 rounded-lg translate-y-1 active:translate-y-2 shadow-md shadow-slate-950"
+                  >
+                    <a href="#" class="text-black text-lg">Shop Now</a>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="absolute mt-[17rem] md:-mt-14 flex md:justify-end md:relative daytona-car-container"
+              >
+                <div
+                  class="mt-12 flex flex-col md:space-y-9 lg:space-y-14 lg:mt-28 lg:ml-8"
+                >
+                  <div class="absolute z-50 hidden lg:block">
+                    <img
+                      src="./assets/daytonaImg.png"
+                      alt=""
+                      class="w-52 ml-56 z-50"
+                    />
+                  </div>
+                  <div class="carImg relative sm:w-auto overflow-hidden">
+                    <img
+                      src="./assets/carImg.png"
+                      alt=""
+                      class="transform scale-x-[-1] md:scale-y-[1] w-[45rem] sm:w-[50rem] lg:w-[49rem] h-[19rem] sm:h-[19.9rem] lg:h-[23rem] object-none object-right md:object-cover static lg:pr-0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="select-options w-full h-auto flex justify-center overflow-visible"
+          >
+            <div
+              class="bg-[#C90000] w-full md:w-[88%] h-[19rem] md:h-[13rem] md:-mt-[4rem] lg:mt-[35.6rem] md:rounded-2xl overflow-visible md:absolute"
+            >
+              <!-- Select Car and Dropdown Box -->
+              <div
+                class="select-options-section w-full h-auto flex flex-col p-6 space-y-4"
+              >
+                <!-- heading -->
+                <div class="select-heading text-white">
+                  <h1 class="text-2xl">Select Car</h1>
+                  <p>Filter alloys by car</p>
+                </div>
+                <!-- dropdown box -->
+                <div
+                  class="dropdown-box-and-apply-button flex flex-col md:flex-row md:justify-between space-y-8 md:space-y-0 md:space-x-16 lg:space-x-20 lg:mr-40"
+                >
+                  <div
+                    class="flex flex-col md:flex-row space-y-4 md:space-y-0 w-full md:justify-between md:space-x-5 lg:space-x-6"
+                  >
+                    <select
+                      name=""
+                      id=""
+                      class="w-full h-10 lg:h-12 rounded-lg px-7 text-xl"
+                    >
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                    </select>
+                    <select
+                      name=""
+                      id=""
+                      class="w-full h-10 lg:h-12 rounded-lg px-7 text-xl"
+                    >
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                      <option data="" type="">First</option>
+                    </select>
+                  </div>
+                  <button
+                    class="text-white text-lg bg-black w-28 h-10 lg:h-12 rounded-lg"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of About Section -->
+      <!-- Products Sections Starts here -->
+      <section
+        id="#product"
+        class="product-section w-full h-auto md:pt-32 lg:pt-3"
+      >
+        <!-- tranding products -->
+        <div
+          class="bg-white w-full h-[35rem] sm:px-10 md:px-20 flex flex-col gap-y-0 sm:gap-y-11"
+        >
+          <div class="heading-and-nextPrevBt flex justify-between">
+            <div class="trending-title">
+              <h1 class="text-2xl sm:text-3xl font-semibold px-6 md:px-0">
+                Trending Product
+              </h1>
+            </div>
+            <!-- Next Previous btn hidden for mobile mode -->
+            <div class="next-prev-btn md:flex space-x-4 hidden">
+              <button
+                class="border-2 border-[#8A8A8A] w-9 h-9 flex justify-center items-center rounded-md bg-[#EBEBEB]"
+              >
+                <img src="./assets/icons/prevBtn.png" alt="" />
+              </button>
+              <button
+                class="border-2 border-[#8A8A8A] w-9 h-9 flex justify-center items-center rounded-md bg-[#EBEBEB]"
+              >
+                <img src="./assets/icons/nextBtn.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <!-- Slider Products -->
+          <div
+            class="products-slider-container w-full h-[29rem] flex items-center justify-center px-1"
+          >
+            <div
+              class="slider-container w-full h-full flex justify-center gap-7 items-center"
+            >
+              <div
+                class="produtsImg-and-Info w-[23rem] sm:h-[27rem] flex flex-col sm:justify-center items-center space-y-3"
+              >
+                <div class="pt-0 mt-0 bg-[#EBEBEB] rounded-lg w-full">
+                  <img
+                    src="./assets/tyre-1.png"
+                    alt=""
+                    class="mx-auto my-auto w-full h-full"
+                  />
+                </div>
+                <div class="w-full px-1.5">
+                  <h1 class="text-2xl font-semibold">DAYTONA</h1>
+                  <p class="text-[#8A8A8A]">Flow Formed Aluminum <br />18"</p>
+                  <span class="text-xl"><strong>&#8377;20,000</strong></span>
+                </div>
+              </div>
+              <div
+                class="produtsImg-and-Info w-[23rem] sm:h-[27rem] md:flex flex-col sm:justify-center items-center space-y-3 hidden"
+              >
+                <div class="pt-0 mt-0 bg-[#EBEBEB] rounded-lg w-full">
+                  <img
+                    src="./assets/tyre-1.png"
+                    alt=""
+                    class="mx-auto my-auto w-full h-full"
+                  />
+                </div>
+                <div class="w-full px-1.5">
+                  <h1 class="text-2xl font-semibold">DAYTONA</h1>
+                  <p class="text-[#8A8A8A]">Flow Formed Aluminum <br />18"</p>
+                  <span class="text-xl"><strong>&#8377;20,000</strong></span>
+                </div>
+              </div>
+              <div
+                class="produtsImg-and-Info w-[23rem] sm:h-[27rem] md:flex flex-col sm:justify-center items-center space-y-3 hidden"
+              >
+                <div class="pt-0 mt-0 bg-[#EBEBEB] rounded-lg w-full">
+                  <img
+                    src="./assets/tyre-1.png"
+                    alt=""
+                    class="mx-auto my-auto w-full h-full"
+                  />
+                </div>
+                <div class="w-full px-1.5">
+                  <h1 class="text-2xl font-semibold">DAYTONA</h1>
+                  <p class="text-[#8A8A8A]">Flow Formed Aluminum <br />18"</p>
+                  <span class="text-xl"><strong>&#8377;20,000</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Explore Our Alloy Gallery -->
+        <div
+          class="alloy-gallery-part w-full h-[30rem] px-5 sm:px-16 md:px-24 md:py-5 md:pt-10"
+        >
+          <div class="heading-and-galleryImg flex flex-col space-y-5">
+            <div class="gallery-heading flex justify-between items-center">
+              <h1 class="text-lg sm:text-xl md:text-3xl font-semibold">
+                Explore Our Alloy Gallery
+              </h1>
+              <button>View All</button>
+            </div>
+            <div
+              class="gallery-card flex flex-col md:flex-row md:justify-center md:items-center w-full space-y-5 md:space-x-6 md:space-y-0"
+            >
+              <div
+                class="gallery-image-and-info bg1 bg-center w-full h-[24rem]"
+              >
+                <div class="w-full h-auto flex flex-col p-3 px-12 mt-[13.3rem]">
+                  <h1 class="text-2xl sm:text-3xl text-white">2022 MERCEDES</h1>
+                  <p class="text-lg text-[#8A8A8A] font-semibold">Brawny</p>
+                </div>
+                <div class="button-container px-12 py-2">
+                  <button
+                    class="bg-black text-white text-xl w-[7rem] h-[3rem] rounded-lg"
+                  >
+                    Explore
+                  </button>
+                </div>
+              </div>
+              <div
+                class="gallery-image-and-info bg2 bg-center w-full h-[24rem]"
+              >
+                <div class="w-full h-auto flex flex-col p-3 px-12 mt-[13.3rem]">
+                  <h1 class="text-2xl sm:text-3xl text-white">2022 FERRARI</h1>
+                  <p class="text-lg text-[#8A8A8A] font-semibold">Daytona</p>
+                </div>
+                <div class="button-container px-12 py-2">
+                  <button
+                    class="bg-black text-white text-xl w-[7rem] h-[3rem] rounded-lg"
+                  >
+                    Explore
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Select Wheel Size Dropdown box -->
+        <div
+          class="dropdown-box-container w-full h-auto mx-0 py-24 mt-80 md:mt-96 lg:mt-0"
+        >
+          <div
+            class="w-full h-[19.5rem] md:h-[11.8rem] bg-[#C90000] md:px-16 lg:px-20 py-5"
+          >
+            <div class="heading-subheading px-4">
+              <h1 class="text-3xl text-white">Select Wheel Size</h1>
+              <p class="text-white text-lg">Filter alloys by wheel size</p>
+            </div>
+            <div
+              class="wheel-dropdown-and-applyBtn w-full h-auto flex flex-col md:flex-row px-4 py-2 mt-2 md:space-x-20 space-y-6 md:space-y-0"
+            >
+              <select
+                name=""
+                id=""
+                class="w-auto sm:w-[24rem] md:w-[25rem] h-12 rounded-lg px-8 text-lg font-semibold"
+              >
+                <option value="#">Select Wheel Size</option>
+                <option value="#">first</option>
+                <option value="#">first</option>
+                <option value="#">first</option>
+                <option value="#">first</option>
+                <option value="#">first</option>
+                <option value="#">first</option>
+              </select>
+              <button class="bg-black text-white text-lg w-28 h-11 rounded-lg">
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Product Section -->
+      <!-- Testimonial Section starts here -->
+      <section class="testimonial-section-slider w-full h-[30rem]">
+        <div
+          class="heading-and-nextPrevBt flex justify-between px-0 sm:px-11 md:px-20"
+        >
+          <div class="trending-title">
+            <h1 class="text-3xl font-semibold px-6 md:px-0">
+              User Testimonials
+            </h1>
+          </div>
+          <!-- Next Previous btn hidden for mobile mode -->
+          <div class="next-prev-btn md:flex space-x-4 hidden">
+            <button
+              class="border-2 border-[#8A8A8A] w-9 h-9 flex justify-center items-center rounded-md bg-[#EBEBEB]"
+            >
+              <img src="./assets/icons/prevBtn.png" alt="prevBtn" />
+            </button>
+            <button
+              class="border-2 border-[#8A8A8A] w-9 h-9 flex justify-center items-center rounded-md bg-[#EBEBEB]"
+            >
+              <img src="./assets/icons/nextBtn.png" alt="nextBtn" />
+            </button>
+          </div>
+        </div>
+        <div class="testimonial-slider w-full mt-5 px-3 h-[30rem]">
+          <div
+            class="testimonial-slider p-4 md:px-16 flex justify-center items-center"
+          >
+            <div
+              class="slide-1 flex flex-col sm:max-w-[35rem] h-[20rem] flex-shrink mx-2 bg-[#EBEBEB] px-2 py-3 sm:px-5 space-y-5 border border-brown-400"
+            >
+              <div class="flex space-x-3 sm:space-x-4">
+                <img
+                  src="./assets/testimonialImgs/testimonial-img.png"
+                  alt=""
+                  class="rounded-full border w-14 h-14 sm:w-16 sm:h-16 bg-cover"
+                />
+                <div class="flex flex-col">
+                  <h5 class="text-[1.1rem] sm:text-xl font-semibold py-1">
+                    Aman Shukla
+                  </h5>
+                  <div class="flex">
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="testimonialTextArea">
+                <p class="text-[#8A8A8A] text-md overflow-hidden h-48">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam voluptatibus consequatur accusantium itaque suscipit,
+                  ut fuga? Ea inventore animi assumenda, qui voluptas officia
+                  vitae ipsa aliquam veniam libero perferendis. Rerum at
+                  ratione, qui itaque enim quibusdam,
+                </p>
+              </div>
+            </div>
+            <div
+              class="slide-2 hidden md:flex flex-col sm:max-w-[35rem] h-[20rem] flex-shrink mx-2 bg-[#EBEBEB] px-2 py-3 sm:px-5 space-y-5 border border-brown-400"
+            >
+              <div class="flex space-x-3 sm:space-x-4">
+                <img
+                  src="./assets/testimonialImgs/testimonial-img.png"
+                  alt=""
+                  class="rounded-full border w-14 h-14 sm:w-16 sm:h-16 bg-cover"
+                />
+                <div class="flex flex-col">
+                  <h5 class="text-xl font-semibold py-1">Aman Shukla</h5>
+                  <div class="flex">
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="testimonialTextArea">
+                <p class="text-[#8A8A8A] text-md overflow-hidden h-48">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam voluptatibus consequatur accusantium itaque suscipit,
+                  ut fuga? Ea inventore animi assumenda, qui voluptas officia
+                  vitae ipsa aliquam veniam libero perferendis. Rerum at
+                  ratione, qui itaque enim quibusdam,
+                </p>
+              </div>
+            </div>
+            <div
+              class="slide-3 hidden lg:flex flex-col sm:max-w-[35rem] h-[20rem] flex-shrink mx-2 bg-[#EBEBEB] px-2 py-3 sm:px-5 space-y-5 border border-brown-400"
+            >
+              <div class="flex space-x-3 sm:space-x-4">
+                <img
+                  src="./assets/testimonialImgs/testimonial-img.png"
+                  alt=""
+                  class="rounded-full border w-14 h-14 sm:w-16 sm:h-16 bg-cover"
+                />
+                <div class="flex flex-col">
+                  <h5 class="text-xl font-semibold py-1">Aman Shukla</h5>
+                  <div class="flex">
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                    <img
+                      src="./assets/testimonialImgs/ratingsStar.png"
+                      alt="ratingsStar"
+                      class="w-5 h-5"
+                      id="1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="testimonialTextArea">
+                <p class="text-[#8A8A8A] text-md overflow-hidden h-48">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquam voluptatibus consequatur accusantium itaque suscipit,
+                  ut fuga? Ea inventore animi assumenda, qui voluptas officia
+                  vitae ipsa aliquam veniam libero perferendis. Rerum at
+                  ratione, qui itaque enim quibusdam,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Testimonial Section -->
+    </main>
+    <!-- End of main section -->
+    <!-- Footer Section Starts here -->
+    <footer class="footer bg-black text-white py-12 w-full">
+      <div class="container px-2 sm:px-5 md:px-12 w-full mx-auto">
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between w-full space-y-7"
+        >
+          <!-- NewsLetter Section -->
+          <div class="newsletter-section text-white flex flex-col space-y-4">
+            <div class="flex flex-col space-y-2">
+              <h1 class="text-lg">Let's Stay Connected</h1>
+              <p class="text-sm text-[#8A8A8A]">
+                Don't miss out! Get alloy news delivered to your inbox.
+              </p>
+            </div>
+            <div class="inputBox-subsBtn flex">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="text-black lg:text-lg pl-2 md:pl-4 py-2 md:py-3 rounded-l-lg w-[15rem] sm:w-[17rem]"
+              />
+              <button
+                class="bg-[#C90000] px-2 rounded-r-lg py-2 md:py-3 md:px-9 md:text-lg outline-none"
+              >
+                Subscribe
+              </button>
+            </div>
+            <div class="social-media-btn flex space-x-8">
+              <button class="border p-2 rounded-full">
+                <img
+                  src="./assets/icons/instagramIcon.png"
+                  alt=""
+                  class="w-7 h-7"
+                />
+              </button>
+              <button class="border p-2 rounded-full">
+                <img
+                  src="./assets/icons/facebookIcon.png"
+                  alt=""
+                  class="w-7 h-7"
+                />
+              </button>
+              <button class="border p-2 rounded-full">
+                <img src="./assets/icons/xIcon.png" alt="" class="w-7 h-7" />
+              </button>
+            </div>
+          </div>
+          <div class="border-b border-gray-600 lg:hidden"></div>
+          <!-- Links Section -->
+          <div
+            class="links-section flex space-x-10 sm:space-x-36 lg:space-x-20"
+          >
+            <div class="text-white pr-6">
+              <h1 class="text-lg pb-4">Support</h1>
+              <ul class="text-sm text-[#8A8A8A] flex flex-col space-y-3">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="text-white pl-7">
+              <h1 class="text-lg pb-4">Links</h1>
+              <ul class="text-sm text-[#8A8A8A] flex flex-col space-y-3">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="border-b border-gray-600 lg:hidden"></div>
+          <!-- Contact Section -->
+          <div class="contact-section text-white">
+            <div class="text-white">
+              <h1 class="text-lg pb-4">Contact</h1>
+              <ul class="contacts-ul flex flex-col space-y-4">
+                <li class="flex space-x-4">
+                  <img
+                    src="./assets/icons/locationIcon.png"
+                    alt="location"
+                    class="w-4 h-5 mt-1"
+                  />
+                  <p class="text-[#8A8A8A] text-sm">
+                    123, ABC Street <br />New Delhi, Delhi, India
+                  </p>
+                </li>
+                <li class="flex space-x-4">
+                  <img
+                    src="./assets/icons/contactIcon.png"
+                    alt="location"
+                    class="w-4 h-5 mt-1"
+                  />
+                  <p class="text-[#8A8A8A] text-sm">
+                    <span>+91</span> 32420493294
+                  </p>
+                </li>
+                <li class="flex space-x-4">
+                  <img
+                    src="./assets/icons/smsIcon.png"
+                    alt="location"
+                    class="w-4 h-5 mt-1"
+                  />
+                  <p class="text-[#8A8A8A] text-sm">
+                    <span>+91</span> 32420493294
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+  </body>
+</html>
